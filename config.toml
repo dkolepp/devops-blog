@@ -15,7 +15,7 @@ disqusShortname = "dan-kolepp-devops-blog"
     description = "Entrepreneurial DevOps Engineer | Balancing Technology, Tradecraft, and Engagement to Optimize Impact"
     # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
-    # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
+    favicon = "/images/favicon.png"             # path to favicon (defaults to favicon.png)
 
     # MENU PLACEHOLDER
     # Menu dict keys:
