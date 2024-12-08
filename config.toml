@@ -7,12 +7,12 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     pagerSize = 10
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
-# disqusShortname = "yourDisqusShortname"
+disqusShortname = "dan-kolepp-devops-blog"
 
 [params]
     brand = "Dan Kolepp"                      # name of your site - appears in the sidebar
     brand_image = "/images/profile.jpeg"    # path to the image shown in the sidebar
-    description = "Entrepreneurial DevOps Engineer | Balancing Technology, Tradecraft, and Engagement to Optimize Impact" 
+    description = "Entrepreneurial DevOps Engineer | Balancing Technology, Tradecraft, and Engagement to Optimize Impact"
     # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
@@ -25,15 +25,15 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Technology (and Tools)", URL = "/technology/", Pre = "Recent", HasChildren = true, Limit = 5},
-        {Name = "Tradecraft", URL = "/tradecraft/", Pre = "Recent", HasChildren = true, Limit = 5},
-        {Name = "Engagement", URL = "/engagement/", Pre = "Recent", HasChildren = true, Limit = 5},
+        {Name = "Technology (and Tools)", URL = "/technology/", HasChildren = true, Limit = 5},
+        {Name = "Tradecraft", URL = "/tradecraft/", HasChildren = true, Limit = 5},
+        {Name = "Engagement", URL = "/engagement/", HasChildren = true, Limit = 5},
         {Name = "Book Shelf", URL = "/bookshelf/", HasChildren = true, Limit = 5},
         {Name = "Podcasts", URL = "/podcasts/", HasChildren = true, Limit = 5},
         {Name = "Insights", URL = "/insights/", HasChildren = true, Limit = 5},
     ]
 
-    front_page_content = ["technology", "tradecraft", "engagement", "book-shelf", "podcasts"]
+    front_page_content = ["technology", "tradecraft", "engagement", "bookshelf", "podcasts"]
     book_tags = [
       "The Lean Startup",
       "The Phoenix Project",
@@ -52,7 +52,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         "Fast Feedback",
     ]
 
-    # Links to your socials.  Comment or delete any you don't need/use. 
+    # Links to your socials.  Comment or delete any you don't need/use.
     #discord_url = "https://discord.com"
     email_url = "mailto://dan@kolepp.dev"
     #facebook_url = "https://facebook.com"
@@ -73,7 +73,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     # Adds an RSS icon to the end of the socials which links to {{ .Site.BaseURL }}/index.xml
     rss_icon = true
     # Which section the RSS icon links to, defaults to all content. See https://gohugo.io/templates/rss/#section-rss
-    rss_section = "posts"
+    #rss_section = "posts"
 
     # Hex colors for your sidebar.
     moon_sun_background_color = "#515151"   # default is #515151
@@ -117,7 +117,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     # remark42 = true
     # remark42_host = "https://yourhost.com"
     # remark42_site_id = "your_site_id"
-    
+
     # NOTE: The following three params are optional and are used to create meta tags + enhance SEO.
     # og_image = ""                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url
                                           # this is also used in the schema output as well. Image is resized to max 1200x630
