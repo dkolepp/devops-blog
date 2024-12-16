@@ -6,8 +6,6 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 [pagination]
     pagerSize = 10
 
-# NOTE: If using Disqus as commenting engine, uncomment and configure this line
-disqusShortname = "dan-kolepp-devops-blog"
 
 [params]
     brand = "Dan Kolepp"                      # name of your site - appears in the sidebar
@@ -129,3 +127,8 @@ disqusShortname = "dan-kolepp-devops-blog"
     series = 'series'
     tags = 'tags'
 
+[services]
+
+[services.disqus]
+# NOTE: If using Disqus as commenting engine, uncomment and configure this line
+Shortname = "dan-kolepp-devops-blog"
