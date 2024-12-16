@@ -50,6 +50,11 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         "Fast Feedback",
     ]
 
+    # Plausible / Analytics
+    plausible = true
+    plausible_domain = "kolepp.dev"
+    plausible_script = "https://plausible.io/js/script.js"
+
     # Links to your socials.  Comment or delete any you don't need/use.
     #discord_url = "https://discord.com"
     email_url = "mailto://dan@kolepp.dev"
