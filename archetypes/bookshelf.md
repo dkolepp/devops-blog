@@ -9,15 +9,15 @@ tags = [
   "tools",
   "techniques",
   "patterns",
-  {{ range .Site.Params.book_tags }}
+  {{- range .Site.Params.book_tags }}
   "{{ .}} Book",
-  {{ end }}
-  {{ range .Site.Params.podcast_tags }}
+  {{- end -}}
+  {{- range .Site.Params.podcast_tags }}
   "{{ .}} Podcast",
-  {{ end }}
-  {{ range .Site.Params.principle_tags }}
+  {{- end -}}
+  {{- range .Site.Params.principle_tags }}
   "{{ .}} Principle",
-  {{ end }}
+  {{- end }}
 ]
 +++
 

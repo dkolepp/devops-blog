@@ -46,8 +46,9 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         "DRY",
         "KISS",
         "Minimize Arbitary Uniqueness",
+        "Convention over Configuration",
         "Shift Left",
-        "Fast Feedback",
+        "Fast Flow",
     ]
 
     # Plausible / Analytics
