@@ -1,5 +1,5 @@
 +++
-date = '2024-12-26T23:24:07-05:00'
+date = '2024-12-31T08:24:07-05:00'
 draft = true
 title = 'Identifying Waste (pt. 1)'
 featuredImage = "/images/tradecraft/wastes_pt_1.png"
