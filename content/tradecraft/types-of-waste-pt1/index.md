@@ -253,7 +253,7 @@ rather than just shifting inefficiencies from one area to another.
 In the next post, we'll explore the remaining four types of waste.
 
 
-## References
+## Related Resources
 
 - ["The Lean Startup" post](/bookshelf/the-lean-startup/)
 - [What is Muda?](https://kanbantool.com/kanban-guide/what-is-muda)

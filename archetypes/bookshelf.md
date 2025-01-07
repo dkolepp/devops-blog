@@ -88,7 +88,7 @@ Pose a question to the reader or suggest they share their thoughts.]
 - [Purchase on Amazon](https://example.com)
 
 
-### Related Books or Concepts
+### Related Resources
 
 - **Book 1:** [Title and link to related post.]
 - **Book 2:** [Title and link to related post.]
