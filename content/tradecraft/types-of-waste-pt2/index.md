@@ -1,6 +1,6 @@
 +++
-date = '2025-01-04T22:24:07-05:00'
-draft = true
+date = '2025-01-06T20:24:07-05:00'
+draft = false
 title = 'Identifying Waste (pt. 2)'
 featuredImage = "/images/tradecraft/wastes_pt_2.png"
 tags = [
