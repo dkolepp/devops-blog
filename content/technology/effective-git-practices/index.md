@@ -283,14 +283,18 @@ Mastering this discipline can significantly improve your development workflow an
 The practices outlined in this post are intentionally opinionated,
 designed to achieve specific outcomes like cleaner repositories, smoother collaboration,
 and faster CI/CD workflows.
-I recommend starting with these tips.
-By practicing them consistently, you’ll build intuition and
+
+If you don’t have a strong opinion, start with these tips.
+If you do, you’re likely already thinking about achieving outcomes like reducing waste,
+improving team alignment, and streamlining development processes.
+
+By practicing these, you’ll build intuition and
 a deeper understanding of what works for your workflows.
 As your team gains experience, experiment with other techniques.
 Adapt and evolve your practices to suit your needs,
 keeping the focus on reducing waste and achieving better outcomes.
 
-Lastly, these tips are not one-size-fits-all -
+Lastly, these tips are not one-size-fits-all —
 they’re context-dependent.
 
 As a team, take the time to discuss the outcomes you’re seeking.
