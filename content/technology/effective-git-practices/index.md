@@ -18,7 +18,7 @@ tags = [
 
 🔄 *Are your `git` practices today setting you and your team up for success or creating waste tomorrow?*
 
-*In this post, I provide 5️⃣  tips to minimize **Motion** waste, improve collaboration, and
+*In this post, I provide 5️⃣  tips to minimize [**Motion**](/tradecraft/types-of-waste-pt1/#motion) waste, improve collaboration, and
 set you and your team up for long-term success.*
 
 <!--more-->
@@ -327,8 +327,8 @@ fewer frustrations in the long run.
     including rebasing, conflict resolution, and branching strategies.
 
 - **Social Contracts in Teams**
-  - *[How to Create a Team Social Contract](https://example.com)* – Articles or blogs on how teams can establish agreements on conventions and practices.
-  - *[Social Contracts in Agile Teams](https://example.com)* – Resources discussing social contracts in Agile and their role in building alignment and accountability.
+  - *[How to Create a Team Social Contract](https://openpracticelibrary.com/practice/social-contract/)* – Article from the
+    [OpenPractice Library](https://openpracticelibrary.com) on Social Contracts, providing adivce on how to implement one for your team.
 
 - **Git Tips and Tutorials**
   - *[Pro Git](https://git-scm.com/book/en/v2)* – A free, authoritative guide to understanding `git` at a deeper level.
