@@ -1,6 +1,6 @@
 +++
-date = '2025-04-25T09:20:23-04:00'
-draft = true
+date = '2025-04-29T08:24:00-04:00'
+draft = false
 title = 'Refactor Fearlessly'
 featuredImage = "/images/tradecraft/refactor_fearlessly.png"
 tags = [
