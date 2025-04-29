@@ -1,0 +1,661 @@
+accounts:
+  dev-east:
+    name: dev-east
+    region: us-east-1
+    vpc_id: vpc-12345678
+    security_groups:
+    - name: apache_server
+      description: Security group for Apache server
+      ingress_files:
+      - dev-east/apache_server/ingress_rules.yml
+      egress_files:
+      - dev-east/apache_server/egress_rules.yml
+      tags_files:
+      - dev-east/apache_server/tags.yml
+    - name: mysql_server
+      description: Security group for MySQL server
+      ingress_files:
+      - dev-east/mysql_server/ingress_rules.yml
+      egress_files:
+      - dev-east/mysql_server/egress_rules.yml
+      tags_files:
+      - dev-east/mysql_server/tags.yml
+    - name: redis_cache
+      description: Security group for Redis cache
+      ingress_files:
+      - dev-east/redis_cache/ingress_rules.yml
+      egress_files:
+      - dev-east/redis_cache/egress_rules.yml
+      tags_files:
+      - dev-east/redis_cache/tags.yml
+    - name: elastic_search
+      description: Security group for Elasticsearch cluster
+      ingress_files:
+      - dev-east/elastic_search/ingress_rules.yml
+      egress_files:
+      - dev-east/elastic_search/egress_rules.yml
+      tags_files:
+      - dev-east/elastic_search/tags.yml
+    - name: bastion_host
+      description: Security group for Bastion host
+      ingress_files:
+      - dev-east/bastion_host/ingress_rules.yml
+      egress_files:
+      - dev-east/bastion_host/egress_rules.yml
+      tags_files:
+      - dev-east/bastion_host/tags.yml
+    - name: admin_console
+      description: Security group for Admin console
+      ingress_files:
+      - dev-east/admin_console/ingress_rules.yml
+      egress_files:
+      - dev-east/admin_console/egress_rules.yml
+      tags_files:
+      - dev-east/admin_console/tags.yml
+    - name: load_balancer
+      description: Security group for Load Balancer
+      ingress_files:
+      - dev-east/load_balancer/ingress_rules.yml
+      egress_files:
+      - dev-east/load_balancer/egress_rules.yml
+      tags_files:
+      - dev-east/load_balancer/tags.yml
+    - name: app_backend
+      description: Security group for Application backend
+      ingress_files:
+      - dev-east/app_backend/ingress_rules.yml
+      egress_files:
+      - dev-east/app_backend/egress_rules.yml
+      tags_files:
+      - dev-east/app_backend/tags.yml
+    - name: app_frontend
+      description: Security group for Application frontend
+      ingress_files:
+      - dev-east/app_frontend/ingress_rules.yml
+      egress_files:
+      - dev-east/app_frontend/egress_rules.yml
+      tags_files:
+      - dev-east/app_frontend/tags.yml
+    - name: worker_nodes
+      description: Security group for Worker nodes
+      ingress_files:
+      - dev-east/worker_nodes/ingress_rules.yml
+      egress_files:
+      - dev-east/worker_nodes/egress_rules.yml
+      tags_files:
+      - dev-east/worker_nodes/tags.yml
+    - name: kafka_broker
+      description: Security group for Kafka brokers
+      ingress_files:
+      - dev-east/kafka_broker/ingress_rules.yml
+      egress_files:
+      - dev-east/kafka_broker/egress_rules.yml
+      tags_files:
+      - dev-east/kafka_broker/tags.yml
+    - name: zookeeper_cluster
+      description: Security group for Zookeeper cluster
+      ingress_files:
+      - dev-east/zookeeper_cluster/ingress_rules.yml
+      egress_files:
+      - dev-east/zookeeper_cluster/egress_rules.yml
+      tags_files:
+      - dev-east/zookeeper_cluster/tags.yml
+    - name: metrics_server
+      description: Security group for Metrics and Monitoring server
+      ingress_files:
+      - dev-east/metrics_server/ingress_rules.yml
+      egress_files:
+      - dev-east/metrics_server/egress_rules.yml
+      tags_files:
+      - dev-east/metrics_server/tags.yml
+    - name: jenkins_server
+      description: Security group for Jenkins build server
+      ingress_files:
+      - dev-east/jenkins_server/ingress_rules.yml
+      egress_files:
+      - dev-east/jenkins_server/egress_rules.yml
+      tags_files:
+      - dev-east/jenkins_server/tags.yml
+    - name: git_server
+      description: Security group for Git server
+      ingress_files:
+      - dev-east/git_server/ingress_rules.yml
+      egress_files:
+      - dev-east/git_server/egress_rules.yml
+      tags_files:
+      - dev-east/git_server/tags.yml
+    - name: sftp_server
+      description: Security group for SFTP server
+      ingress_files:
+      - dev-east/sftp_server/ingress_rules.yml
+      egress_files:
+      - dev-east/sftp_server/egress_rules.yml
+      tags_files:
+      - dev-east/sftp_server/tags.yml
+    - name: dns_resolver
+      description: Security group for DNS resolver
+      ingress_files:
+      - dev-east/dns_resolver/ingress_rules.yml
+      egress_files:
+      - dev-east/dns_resolver/egress_rules.yml
+      tags_files:
+      - dev-east/dns_resolver/tags.yml
+    - name: backup_server
+      description: Security group for Backup server
+      ingress_files:
+      - dev-east/backup_server/ingress_rules.yml
+      egress_files:
+      - dev-east/backup_server/egress_rules.yml
+      tags_files:
+      - dev-east/backup_server/tags.yml
+    - name: api_gateway
+      description: Security group for API Gateway
+      ingress_files:
+      - dev-east/api_gateway/ingress_rules.yml
+      egress_files:
+      - dev-east/api_gateway/egress_rules.yml
+      tags_files:
+      - dev-east/api_gateway/tags.yml
+    - name: internal_services
+      description: Security group for Internal Services
+      ingress_files:
+      - dev-east/internal_services/ingress_rules.yml
+      egress_files:
+      - dev-east/internal_services/egress_rules.yml
+      tags_files:
+      - dev-east/internal_services/tags.yml
+  dev-west:
+    name: dev-west
+    region: us-west-2
+    vpc_id: vpc-87654321
+    security_groups:
+    - name: apache_server
+      description: Security group for Apache server
+      ingress_files:
+      - dev-west/apache_server/ingress_rules.yml
+      egress_files:
+      - dev-west/apache_server/egress_rules.yml
+      tags_files:
+      - dev-west/apache_server/tags.yml
+    - name: mysql_server
+      description: Security group for MySQL server
+      ingress_files:
+      - dev-west/mysql_server/ingress_rules.yml
+      egress_files:
+      - dev-west/mysql_server/egress_rules.yml
+      tags_files:
+      - dev-west/mysql_server/tags.yml
+    - name: redis_cache
+      description: Security group for Redis cache
+      ingress_files:
+      - dev-west/redis_cache/ingress_rules.yml
+      egress_files:
+      - dev-west/redis_cache/egress_rules.yml
+      tags_files:
+      - dev-west/redis_cache/tags.yml
+    - name: elastic_search
+      description: Security group for Elasticsearch cluster
+      ingress_files:
+      - dev-west/elastic_search/ingress_rules.yml
+      egress_files:
+      - dev-west/elastic_search/egress_rules.yml
+      tags_files:
+      - dev-west/elastic_search/tags.yml
+    - name: bastion_host
+      description: Security group for Bastion host
+      ingress_files:
+      - dev-west/bastion_host/ingress_rules.yml
+      egress_files:
+      - dev-west/bastion_host/egress_rules.yml
+      tags_files:
+      - dev-west/bastion_host/tags.yml
+    - name: admin_console
+      description: Security group for Admin console
+      ingress_files:
+      - dev-west/admin_console/ingress_rules.yml
+      egress_files:
+      - dev-west/admin_console/egress_rules.yml
+      tags_files:
+      - dev-west/admin_console/tags.yml
+    - name: load_balancer
+      description: Security group for Load Balancer
+      ingress_files:
+      - dev-west/load_balancer/ingress_rules.yml
+      egress_files:
+      - dev-west/load_balancer/egress_rules.yml
+      tags_files:
+      - dev-west/load_balancer/tags.yml
+    - name: app_backend
+      description: Security group for Application backend
+      ingress_files:
+      - dev-west/app_backend/ingress_rules.yml
+      egress_files:
+      - dev-west/app_backend/egress_rules.yml
+      tags_files:
+      - dev-west/app_backend/tags.yml
+    - name: app_frontend
+      description: Security group for Application frontend
+      ingress_files:
+      - dev-west/app_frontend/ingress_rules.yml
+      egress_files:
+      - dev-west/app_frontend/egress_rules.yml
+      tags_files:
+      - dev-west/app_frontend/tags.yml
+    - name: worker_nodes
+      description: Security group for Worker nodes
+      ingress_files:
+      - dev-west/worker_nodes/ingress_rules.yml
+      egress_files:
+      - dev-west/worker_nodes/egress_rules.yml
+      tags_files:
+      - dev-west/worker_nodes/tags.yml
+    - name: kafka_broker
+      description: Security group for Kafka brokers
+      ingress_files:
+      - dev-west/kafka_broker/ingress_rules.yml
+      egress_files:
+      - dev-west/kafka_broker/egress_rules.yml
+      tags_files:
+      - dev-west/kafka_broker/tags.yml
+    - name: zookeeper_cluster
+      description: Security group for Zookeeper cluster
+      ingress_files:
+      - dev-west/zookeeper_cluster/ingress_rules.yml
+      egress_files:
+      - dev-west/zookeeper_cluster/egress_rules.yml
+      tags_files:
+      - dev-west/zookeeper_cluster/tags.yml
+    - name: metrics_server
+      description: Security group for Metrics and Monitoring server
+      ingress_files:
+      - dev-west/metrics_server/ingress_rules.yml
+      egress_files:
+      - dev-west/metrics_server/egress_rules.yml
+      tags_files:
+      - dev-west/metrics_server/tags.yml
+    - name: jenkins_server
+      description: Security group for Jenkins build server
+      ingress_files:
+      - dev-west/jenkins_server/ingress_rules.yml
+      egress_files:
+      - dev-west/jenkins_server/egress_rules.yml
+      tags_files:
+      - dev-west/jenkins_server/tags.yml
+    - name: git_server
+      description: Security group for Git server
+      ingress_files:
+      - dev-west/git_server/ingress_rules.yml
+      egress_files:
+      - dev-west/git_server/egress_rules.yml
+      tags_files:
+      - dev-west/git_server/tags.yml
+    - name: sftp_server
+      description: Security group for SFTP server
+      ingress_files:
+      - dev-west/sftp_server/ingress_rules.yml
+      egress_files:
+      - dev-west/sftp_server/egress_rules.yml
+      tags_files:
+      - dev-west/sftp_server/tags.yml
+    - name: dns_resolver
+      description: Security group for DNS resolver
+      ingress_files:
+      - dev-west/dns_resolver/ingress_rules.yml
+      egress_files:
+      - dev-west/dns_resolver/egress_rules.yml
+      tags_files:
+      - dev-west/dns_resolver/tags.yml
+    - name: backup_server
+      description: Security group for Backup server
+      ingress_files:
+      - dev-west/backup_server/ingress_rules.yml
+      egress_files:
+      - dev-west/backup_server/egress_rules.yml
+      tags_files:
+      - dev-west/backup_server/tags.yml
+    - name: api_gateway
+      description: Security group for API Gateway
+      ingress_files:
+      - dev-west/api_gateway/ingress_rules.yml
+      egress_files:
+      - dev-west/api_gateway/egress_rules.yml
+      tags_files:
+      - dev-west/api_gateway/tags.yml
+    - name: internal_services
+      description: Security group for Internal Services
+      ingress_files:
+      - dev-west/internal_services/ingress_rules.yml
+      egress_files:
+      - dev-west/internal_services/egress_rules.yml
+      tags_files:
+      - dev-west/internal_services/tags.yml
+  prod-east:
+    name: prod-east
+    region: us-east-1
+    vpc_id: vpc-23456781
+    security_groups:
+    - name: apache_server
+      description: Security group for Apache server
+      ingress_files:
+      - prod-east/apache_server/ingress_rules.yml
+      egress_files:
+      - prod-east/apache_server/egress_rules.yml
+      tags_files:
+      - prod-east/apache_server/tags.yml
+    - name: mysql_server
+      description: Security group for MySQL server
+      ingress_files:
+      - prod-east/mysql_server/ingress_rules.yml
+      egress_files:
+      - prod-east/mysql_server/egress_rules.yml
+      tags_files:
+      - prod-east/mysql_server/tags.yml
+    - name: redis_cache
+      description: Security group for Redis cache
+      ingress_files:
+      - prod-east/redis_cache/ingress_rules.yml
+      egress_files:
+      - prod-east/redis_cache/egress_rules.yml
+      tags_files:
+      - prod-east/redis_cache/tags.yml
+    - name: elastic_search
+      description: Security group for Elasticsearch cluster
+      ingress_files:
+      - prod-east/elastic_search/ingress_rules.yml
+      egress_files:
+      - prod-east/elastic_search/egress_rules.yml
+      tags_files:
+      - prod-east/elastic_search/tags.yml
+    - name: bastion_host
+      description: Security group for Bastion host
+      ingress_files:
+      - prod-east/bastion_host/ingress_rules.yml
+      egress_files:
+      - prod-east/bastion_host/egress_rules.yml
+      tags_files:
+      - prod-east/bastion_host/tags.yml
+    - name: admin_console
+      description: Security group for Admin console
+      ingress_files:
+      - prod-east/admin_console/ingress_rules.yml
+      egress_files:
+      - prod-east/admin_console/egress_rules.yml
+      tags_files:
+      - prod-east/admin_console/tags.yml
+    - name: load_balancer
+      description: Security group for Load Balancer
+      ingress_files:
+      - prod-east/load_balancer/ingress_rules.yml
+      egress_files:
+      - prod-east/load_balancer/egress_rules.yml
+      tags_files:
+      - prod-east/load_balancer/tags.yml
+    - name: app_backend
+      description: Security group for Application backend
+      ingress_files:
+      - prod-east/app_backend/ingress_rules.yml
+      egress_files:
+      - prod-east/app_backend/egress_rules.yml
+      tags_files:
+      - prod-east/app_backend/tags.yml
+    - name: app_frontend
+      description: Security group for Application frontend
+      ingress_files:
+      - prod-east/app_frontend/ingress_rules.yml
+      egress_files:
+      - prod-east/app_frontend/egress_rules.yml
+      tags_files:
+      - prod-east/app_frontend/tags.yml
+    - name: worker_nodes
+      description: Security group for Worker nodes
+      ingress_files:
+      - prod-east/worker_nodes/ingress_rules.yml
+      egress_files:
+      - prod-east/worker_nodes/egress_rules.yml
+      tags_files:
+      - prod-east/worker_nodes/tags.yml
+    - name: kafka_broker
+      description: Security group for Kafka brokers
+      ingress_files:
+      - prod-east/kafka_broker/ingress_rules.yml
+      egress_files:
+      - prod-east/kafka_broker/egress_rules.yml
+      tags_files:
+      - prod-east/kafka_broker/tags.yml
+    - name: zookeeper_cluster
+      description: Security group for Zookeeper cluster
+      ingress_files:
+      - prod-east/zookeeper_cluster/ingress_rules.yml
+      egress_files:
+      - prod-east/zookeeper_cluster/egress_rules.yml
+      tags_files:
+      - prod-east/zookeeper_cluster/tags.yml
+    - name: metrics_server
+      description: Security group for Metrics and Monitoring server
+      ingress_files:
+      - prod-east/metrics_server/ingress_rules.yml
+      egress_files:
+      - prod-east/metrics_server/egress_rules.yml
+      tags_files:
+      - prod-east/metrics_server/tags.yml
+    - name: jenkins_server
+      description: Security group for Jenkins build server
+      ingress_files:
+      - prod-east/jenkins_server/ingress_rules.yml
+      egress_files:
+      - prod-east/jenkins_server/egress_rules.yml
+      tags_files:
+      - prod-east/jenkins_server/tags.yml
+    - name: git_server
+      description: Security group for Git server
+      ingress_files:
+      - prod-east/git_server/ingress_rules.yml
+      egress_files:
+      - prod-east/git_server/egress_rules.yml
+      tags_files:
+      - prod-east/git_server/tags.yml
+    - name: sftp_server
+      description: Security group for SFTP server
+      ingress_files:
+      - prod-east/sftp_server/ingress_rules.yml
+      egress_files:
+      - prod-east/sftp_server/egress_rules.yml
+      tags_files:
+      - prod-east/sftp_server/tags.yml
+    - name: dns_resolver
+      description: Security group for DNS resolver
+      ingress_files:
+      - prod-east/dns_resolver/ingress_rules.yml
+      egress_files:
+      - prod-east/dns_resolver/egress_rules.yml
+      tags_files:
+      - prod-east/dns_resolver/tags.yml
+    - name: backup_server
+      description: Security group for Backup server
+      ingress_files:
+      - prod-east/backup_server/ingress_rules.yml
+      egress_files:
+      - prod-east/backup_server/egress_rules.yml
+      tags_files:
+      - prod-east/backup_server/tags.yml
+    - name: api_gateway
+      description: Security group for API Gateway
+      ingress_files:
+      - prod-east/api_gateway/ingress_rules.yml
+      egress_files:
+      - prod-east/api_gateway/egress_rules.yml
+      tags_files:
+      - prod-east/api_gateway/tags.yml
+    - name: internal_services
+      description: Security group for Internal Services
+      ingress_files:
+      - prod-east/internal_services/ingress_rules.yml
+      egress_files:
+      - prod-east/internal_services/egress_rules.yml
+      tags_files:
+      - prod-east/internal_services/tags.yml
+  prod-west:
+    name: prod-west
+    region: us-west-2
+    vpc_id: vpc-76543218
+    security_groups:
+    - name: apache_server
+      description: Security group for Apache server
+      ingress_files:
+      - prod-west/apache_server/ingress_rules.yml
+      egress_files:
+      - prod-west/apache_server/egress_rules.yml
+      tags_files:
+      - prod-west/apache_server/tags.yml
+    - name: mysql_server
+      description: Security group for MySQL server
+      ingress_files:
+      - prod-west/mysql_server/ingress_rules.yml
+      egress_files:
+      - prod-west/mysql_server/egress_rules.yml
+      tags_files:
+      - prod-west/mysql_server/tags.yml
+    - name: redis_cache
+      description: Security group for Redis cache
+      ingress_files:
+      - prod-west/redis_cache/ingress_rules.yml
+      egress_files:
+      - prod-west/redis_cache/egress_rules.yml
+      tags_files:
+      - prod-west/redis_cache/tags.yml
+    - name: elastic_search
+      description: Security group for Elasticsearch cluster
+      ingress_files:
+      - prod-west/elastic_search/ingress_rules.yml
+      egress_files:
+      - prod-west/elastic_search/egress_rules.yml
+      tags_files:
+      - prod-west/elastic_search/tags.yml
+    - name: bastion_host
+      description: Security group for Bastion host
+      ingress_files:
+      - prod-west/bastion_host/ingress_rules.yml
+      egress_files:
+      - prod-west/bastion_host/egress_rules.yml
+      tags_files:
+      - prod-west/bastion_host/tags.yml
+    - name: admin_console
+      description: Security group for Admin console
+      ingress_files:
+      - prod-west/admin_console/ingress_rules.yml
+      egress_files:
+      - prod-west/admin_console/egress_rules.yml
+      tags_files:
+      - prod-west/admin_console/tags.yml
+    - name: load_balancer
+      description: Security group for Load Balancer
+      ingress_files:
+      - prod-west/load_balancer/ingress_rules.yml
+      egress_files:
+      - prod-west/load_balancer/egress_rules.yml
+      tags_files:
+      - prod-west/load_balancer/tags.yml
+    - name: app_backend
+      description: Security group for Application backend
+      ingress_files:
+      - prod-west/app_backend/ingress_rules.yml
+      egress_files:
+      - prod-west/app_backend/egress_rules.yml
+      tags_files:
+      - prod-west/app_backend/tags.yml
+    - name: app_frontend
+      description: Security group for Application frontend
+      ingress_files:
+      - prod-west/app_frontend/ingress_rules.yml
+      egress_files:
+      - prod-west/app_frontend/egress_rules.yml
+      tags_files:
+      - prod-west/app_frontend/tags.yml
+    - name: worker_nodes
+      description: Security group for Worker nodes
+      ingress_files:
+      - prod-west/worker_nodes/ingress_rules.yml
+      egress_files:
+      - prod-west/worker_nodes/egress_rules.yml
+      tags_files:
+      - prod-west/worker_nodes/tags.yml
+    - name: kafka_broker
+      description: Security group for Kafka brokers
+      ingress_files:
+      - prod-west/kafka_broker/ingress_rules.yml
+      egress_files:
+      - prod-west/kafka_broker/egress_rules.yml
+      tags_files:
+      - prod-west/kafka_broker/tags.yml
+    - name: zookeeper_cluster
+      description: Security group for Zookeeper cluster
+      ingress_files:
+      - prod-west/zookeeper_cluster/ingress_rules.yml
+      egress_files:
+      - prod-west/zookeeper_cluster/egress_rules.yml
+      tags_files:
+      - prod-west/zookeeper_cluster/tags.yml
+    - name: metrics_server
+      description: Security group for Metrics and Monitoring server
+      ingress_files:
+      - prod-west/metrics_server/ingress_rules.yml
+      egress_files:
+      - prod-west/metrics_server/egress_rules.yml
+      tags_files:
+      - prod-west/metrics_server/tags.yml
+    - name: jenkins_server
+      description: Security group for Jenkins build server
+      ingress_files:
+      - prod-west/jenkins_server/ingress_rules.yml
+      egress_files:
+      - prod-west/jenkins_server/egress_rules.yml
+      tags_files:
+      - prod-west/jenkins_server/tags.yml
+    - name: git_server
+      description: Security group for Git server
+      ingress_files:
+      - prod-west/git_server/ingress_rules.yml
+      egress_files:
+      - prod-west/git_server/egress_rules.yml
+      tags_files:
+      - prod-west/git_server/tags.yml
+    - name: sftp_server
+      description: Security group for SFTP server
+      ingress_files:
+      - prod-west/sftp_server/ingress_rules.yml
+      egress_files:
+      - prod-west/sftp_server/egress_rules.yml
+      tags_files:
+      - prod-west/sftp_server/tags.yml
+    - name: dns_resolver
+      description: Security group for DNS resolver
+      ingress_files:
+      - prod-west/dns_resolver/ingress_rules.yml
+      egress_files:
+      - prod-west/dns_resolver/egress_rules.yml
+      tags_files:
+      - prod-west/dns_resolver/tags.yml
+    - name: backup_server
+      description: Security group for Backup server
+      ingress_files:
+      - prod-west/backup_server/ingress_rules.yml
+      egress_files:
+      - prod-west/backup_server/egress_rules.yml
+      tags_files:
+      - prod-west/backup_server/tags.yml
+    - name: api_gateway
+      description: Security group for API Gateway
+      ingress_files:
+      - prod-west/api_gateway/ingress_rules.yml
+      egress_files:
+      - prod-west/api_gateway/egress_rules.yml
+      tags_files:
+      - prod-west/api_gateway/tags.yml
+    - name: internal_services
+      description: Security group for Internal Services
+      ingress_files:
+      - prod-west/internal_services/ingress_rules.yml
+      egress_files:
+      - prod-west/internal_services/egress_rules.yml
+      tags_files:
+      - prod-west/internal_services/tags.yml
